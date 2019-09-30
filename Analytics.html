@@ -22,6 +22,9 @@ crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 crossorigin="anonymous">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
 <title>Uptempo Pharma CRM. Find Key Opinion Leaders. Optimize Speaker Programs. </title>
 
 
@@ -138,7 +141,17 @@ crossorigin="anonymous">
             outline: none;
         }
 
+.fade {
+  margin: 50px;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+}
 
+.card-img-top {
+    padding: 0 20% 0 20%;
+    text-align: center;
+}
 
     </style>
 
@@ -173,13 +186,56 @@ crossorigin="anonymous">
        </nav>
 
 
-              <!-- <center>
-                    <h1>The Most Powerful Search Tool for Oncology Data</h1>
-                    <p class="testfont" >Explore Doctors, Target Payments, Save Lives</p>
-                </center> -->
+              <center>
+                    <!-- <h1>Analytics</h1>
+                    <p class="testfont" >Explore Doctors, Target Payments, Save Lives</p> -->
+
+        <h1 class="h2class textgrade">Pharma CRM - Find Key Opnion Leaders  </h1>
+   
+
+                </center>
 
             
+                <div>
+                    <div class="fade">
+                            <img class="card-img-top" src="images/prep5c.png" alt="Card image cap">
+  
+                            <center>
+                                    <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
+                                            Contact Us
+                                          </button>
+                           </center>
+                        
+                        <h4 class="padding">Speaker Program Optimization</h4>
+                        <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
 
+
+                    </div>
+                    <div class="fade">
+                            <img class="card-img-top" src="images/prep5c.png" alt="Card image cap">
+                        <h4 class="padding">Speaker Program Optimization</h4>
+                                    <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
+            
+
+                    </div>
+                    <div class="fade">
+                            <img class="card-img-top" src="images/prep5c.png" alt="Card image cap">
+                        <h4 class="padding">Speaker Program Optimization</h4>
+                                    <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
+            
+                    </div>
+                    <div class="fade">
+                        <h4 class="padding">Speaker Program Optimization</h4>
+                                    <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
+            
+                    </div>
+                    <div class="fade">Fade In 05</div>
+                    <div class="fade">Fade In 06</div>
+                    <div class="fade">Fade In 07</div>
+                    <div class="fade">Fade In 08</div>
+                    <div class="fade">Fade In 09</div>
+                    <div class="fade">Fade In 10</div>
+                  </div>
 
     <div class="container">
 
@@ -190,7 +246,7 @@ crossorigin="anonymous">
                 </div> -->
 
 
-            <iframe width="100%" frameborder="0" src="https://uptempogroup.blogspot.com/" height="2000px"></iframe>
+            <!-- <iframe width="100%" frameborder="0" src="https://uptempogroup.blogspot.com/" height="2000px"></iframe> -->
 
             
 
@@ -198,6 +254,23 @@ crossorigin="anonymous">
 
     </div>
 
-
+<script>
+    $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
 </body>
 </html>

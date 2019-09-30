@@ -22,6 +22,11 @@ crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 crossorigin="anonymous">
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
 <title>Uptempo Pharma CRM. Find Key Opinion Leaders. Optimize Speaker Programs. </title>
 
 
@@ -138,7 +143,22 @@ crossorigin="anonymous">
             outline: none;
         }
 
+/* #container
+{
+    height:2000px;    
+} */
 
+#container DIV
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:rgb(221, 245, 255); 
+}
+
+.hideme
+{
+    opacity:0;
+}
 
     </style>
 
@@ -173,12 +193,57 @@ crossorigin="anonymous">
        </nav>
 
 
-              <!-- <center>
-                    <h1>The Most Powerful Search Tool for Oncology Data</h1>
+              <center>
+                    <h1>Market Insights</h1>
                     <p class="testfont" >Explore Doctors, Target Payments, Save Lives</p>
-                </center> -->
+                </center>
 
             
+
+
+                <div id="container">
+    
+                    <div id="monster">Hello</div>
+                    <div>Hello</div>
+                    <div class="hideme">Fade In</div>
+                    <div class="hideme">Fade In</div>
+                    <div class="hideme">Fade In</div>
+                    <div class="hideme">Fade In</div>
+                    <div class="hideme">Fade In</div>
+                    
+                </div>
+
+                <script>
+                $(function(){  // $(document).ready shorthand
+                    $('.monster').fadeIn('slow');
+                  });
+                  
+                  $(document).ready(function() {
+                      
+                      /* Every time the window is scrolled ... */
+                      $(window).scroll( function(){
+                      
+                          /* Check the location of each desired element */
+                          $('.hideme').each( function(i){
+                              
+                              var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                              var bottom_of_window = $(window).scrollTop() + $(window).height();
+                              
+                              /* If the object is completely visible in the window, fade it it */
+                              if( bottom_of_window > bottom_of_object ){
+                                  
+                                  $(this).animate({'opacity':'1'},1500);
+                                      
+                              }
+                              
+                          }); 
+                      
+                      });
+                      
+                  });
+
+</script>
+
 
 
     <div class="container">
@@ -190,7 +255,7 @@ crossorigin="anonymous">
                 </div> -->
 
 
-            <iframe width="100%" frameborder="0" src="https://uptempogroup.blogspot.com/" height="2000px"></iframe>
+            <!-- <iframe width="100%" frameborder="0" src="https://uptempogroup.blogspot.com/" height="2000px"></iframe> -->
 
             
 
