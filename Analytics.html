@@ -148,14 +148,13 @@ crossorigin="anonymous">
   opacity: 1;
 }
 
-.card-img-top {
+/* .card-img-top {
     padding: 0 20% 0 20%;
     text-align: center;
-}
+} */
 
-.maxed {
-    max-width: 282px;
-min-width: 200px;
+.maxed2 {
+    max-width: 900px;
 }
 
 .maxed1 {
@@ -163,36 +162,7 @@ min-width: 200px;
 min-width: 200px;
 }
 
-p#cf7_controls {
-  text-align:center;
-}
-#cf7_controls span {
-  padding-right:2em;
-  cursor:pointer;
-}
-#cf7 {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto 10px;
-}
-#cf7 img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity:0;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-}
 
-#cf7 img.opaque {
-  opacity:1;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=1);
-}
 
 .righty {
     text-align: right;
@@ -231,24 +201,14 @@ p#cf7_controls {
        </nav>
 
 
+
+       <img class="maxed2 card-img-top" src="images/slide3.png" alt="Card image cap">
+
+
               <center>
                     <!-- <h1>Analytics</h1>
                     <p class="testfont" >Explore Doctors, Target Payments, Save Lives</p> -->
-                    <div id="cf7" class="shadow">
-                            <img class="opaque maxed" src="images/square5.png" alt="Card image cap">
-                            <img class=" maxed1" src="images/prep5c.png" alt="Card image cap">
-                            <img class="maxed1" src="images/prep_4a.png" alt="Card image cap">
-                            <img class="maxed1" src="images/prep_6a.png" alt="Card image cap">
-
-                          </div>
-                          <p id="cf7_controls">
-                            <span class="selected">SpeakerBook</span>
-                            <span>Feature 1</span>
-                            <span>Feature 2</span>
-                            <span>Feature 3</span>
-                          </p>
-
-
+   
                     <!-- <img class="maxed" src="images/square3.png" alt="Card image cap"> -->
 
         <!-- <h1 class="h2class textgrade">Pharma CRM - Find Key Opnion Leaders  </h1> -->
@@ -257,6 +217,9 @@ p#cf7_controls {
                 </center>
 
                 <center>
+
+                    
+
                         <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
                                 Contact Us
                               </button>
@@ -376,19 +339,6 @@ p#cf7_controls {
   }).scroll(); //invoke scroll-handler on page-load
 });
 
-
-$(document).ready(function() {
-  $("#cf7_controls").on('click', 'span', function() {
-    $("#cf7 img").removeClass("opaque");
-
-    var newImage = $(this).index();
-
-    $("#cf7 img").eq(newImage).addClass("opaque");
-
-    $("#cf7_controls span").removeClass("selected");
-    $(this).addClass("selected");
-  });
-});
 
 
 </script>
