@@ -22,8 +22,10 @@ crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 crossorigin="anonymous">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
 <title>Uptempo Pharma CRM. Find Key Opinion Leaders. Optimize Speaker Programs. </title>
 
@@ -56,7 +58,7 @@ crossorigin="anonymous">
             margin-left: auto;
             margin-right: auto;
             width: 100%;
-             
+            max-width: 900px;  
         }
          .container2 {
             float: left;
@@ -82,7 +84,7 @@ crossorigin="anonymous">
             padding: 20px 20px 0 20px;
         }
         .textgrade {
-            font-size: 25px;
+            font-size: 30px;
             font-weight: bolder;
             background: -webkit-linear-gradient(rgb(84, 176, 230), rgb(34, 147, 240));
             -webkit-background-clip: text;
@@ -141,40 +143,26 @@ crossorigin="anonymous">
             outline: none;
         }
 
-.fade {
-  margin: 10%;
-  /* padding: 10%; */
-  background-color: rgb(255, 255, 255);
-  opacity: 1;
+/* #container
+{
+    height:2000px;    
+} */
+
+#container DIV
+{ 
+    margin:10%; 
+    /* padding:50px;  */
+    background-color:rgb(255, 255, 255); 
 }
 
-.card-img-top1 {
-    /* padding: 0 20% 0 20%; */
-    text-align: center;
+.hideme
+{
+    opacity:0;
+}
+
+.card-img-top {
     max-width: 900px;
-    /* min-width: 300px; */
-}
-
-.maxed2 {
-    max-width: 900px;
-    
-}
-
-.maxed1 {
-    max-width: 362px;
-min-width: 200px;
-}
-
-
-
-.righty {
-    text-align: right;
-}
-
-#container DIV {
-    margin: 20px;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
+    /* min-width: 400px; */
 }
 
     </style>
@@ -210,113 +198,131 @@ min-width: 200px;
        </nav>
 
 
-
-
-
               <center>
-                    <img class="maxed2 card-img-top" src="images/slide3.png" alt="Card image cap">
+                    <img class="maxed card-img-top" src="images/slide3.png" alt="Card image cap">
+                    <h4 class="padding">G-Blueprint Analytics</h4>
+                    <p class="padding testfont">Program budget staticitics with impactful results</p>
+        
 
-                    <!-- <h1>Analytics</h1>
-                    <p class="testfont" >Explore Doctors, Target Payments, Save Lives</p> -->
-   
-                    <!-- <img class="maxed" src="images/square3.png" alt="Card image cap"> -->
-
-        <!-- <h1 class="h2class textgrade">Pharma CRM - Find Key Opnion Leaders  </h1> -->
-   
-
-                </center>
-
-                <center>
-
-                        <h4 class="padding">Speaker Program Optimization</h4>
-                        <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
-            
-                        <!-- <h1 class="h2class textgrade">G-Blueprint  </h1>
+                    <!-- <h1 class="h2class textgrade">Market Intel  </h1>
 
 
-                        <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
-                                Contact Us
-                              </button> -->
-               </center>
-            
-           
-     
-            
-                <div>
+                    <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
+                            Contact Us
+                          </button> -->
+           </center>
+        
+       
+ 
+        
+            <div>
 
-                      
+                    
 
-                    <div class="fade">
-  
+
+                <div id="container">
+    
+                    <!-- <div id="monster">Hello</div> -->
+                    <!-- <div>Hello</div> -->
+                    <div class="">
                             <center>
-                                    <img class="card-img-top1 card-img-top" src="images/g_6.png" alt="Card image cap">
-
-                                    <!-- <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
-                                            Contact Us
-                                          </button> -->
-                           </center>
-                        
-                        <h4 class="padding">Speaker Program Optimization</h4>
-                        <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
-
-
-                    </div>
-                    <div class="fade">
-                        <center>
-                            <img class="card-img-top1 card-img-top" src="images/g_2.png" alt="Card image cap">
-
-                        </center>
-                        <h4 class="padding">Speaker Program Optimization</h4>
-                                    <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
+                                    <img class="card-img-top1 card-img-top" src="images/g_2.png" alt="Card image cap">
+                            </center>
+                                <h4 class="padding">View total payments for any RX company</h4>
+                                <p class="padding testfont">Choose brands, payment category, and regions </p>
             
-
                     </div>
-                    <div class="fade">
+                    <div class="hideme">
                             <center>
                                     <img class="card-img-top1 card-img-top" src="images/g_1.png" alt="Card image cap">
-        
-                                </center>                        <h4 class="padding">Speaker Program Optimization</h4>
-                                    <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
-            
+                            </center>
+                                <h4 class="padding">Number of Payments </h4>
+                                <p class="padding testfont">View how many times payments were made.  RX companies paymenst on demand. </p>
                     </div>
-                    <div class="fade">
+                    <div class="hideme">
                             <center>
                                     <img class="card-img-top1 card-img-top" src="images/g_3.png" alt="Card image cap">
-        
-                                </center>                        <h4 class="padding">Speaker Program Optimization</h4>
-                                    <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
-            
+                            </center>
+                                <h4 class="padding">Analyze Events </h4>
+                                <p class="padding testfont">Understand where the money is moving by targeting payment from comnapies to doctors</p>
                     </div>
-
-
-                   
-                        
-        <h1 class="textgrade">Without good data and analysis your group will miss opportunities.</h1>
-        <div class="container">
-                <div class="row">
-                  <div class="col-4">
-                        <img class="container1" src="images/spots1.png" alt="data 1">
-                    <center>  <p class="ftsize">Target Data</p></center>
-                  </div>
-                  <div class="col-4">
-                        <img class="container1" src="images/spot2.png" alt="data 2">
-                    <center>  <p class="ftsize">Organize Process</p></center>
+                    <div class="hideme">
+                            <center>
+                                    <img class="card-img-top1 card-img-top" src="images/g_4.png" alt="Card image cap">
+                            </center>
+                                <h4 class="padding">Filter Data Categories</h4>
+                                <p class="padding testfont">Search By Brand, Payment Category, or Region to target the correct information for your needs.</p>
                     </div>
-                  <div class="col-4">
-                        <img class="container1" src="images/spots3.png" alt="data 3">
-                   <center><p class="ftsize">Control Sales</p></center>
+                    <div class="hideme">
+                            <center>
+                                    <img class="card-img-top1 card-img-top" src="images/g_5.png" alt="Card image cap">
+                            </center>
+                                <h4 class="padding">Search By Rx Brands</h4>
+                                <p class="padding testfont">Target specific brands to understand your organization's spending or competitor spending </p>
                     </div>
+                    <div class="hideme">
+                            <center>
+                                    <img class="card-img-top1 card-img-top" src="images/mi_9.png" alt="Card image cap">
+                            </center>
+                                <h4 class="padding">View Payment Categories</h4>
+                                <p class="padding testfont">Understand where the money is moving by targeting payment from comnapies to doctors</p>
+                    </div>
+                    <div class="hideme">
+                            <center>
+                                    <img class="card-img-top1 card-img-top" src="images/mi_4.png" alt="Card image cap">
+                            </center>
+                                <h4 class="padding">Target Regions</h4>
+                                <p class="padding testfont">Stay compeditive in your teritories. Target regions to improve sales.</p>
+                    </div>
+                    <!-- <div class="hideme">
+                            <center>
+                                    <img class="card-img-top1 card-img-top" src="images/mi_1.png" alt="Card image cap">
+                            </center>
+                                <h4 class="padding">Target Competitors </h4>
+                                <p class="padding testfont">View multiple RX companies to keep updated on the industry </p>
+                    </div>
+                    <div class="hideme">
+                            <center>
+                                    <img class="card-img-top1 card-img-top" src="images/mi_5.png" alt="Card image cap">
+                            </center>
+                                <h4 class="padding">Speaker Program Optimization</h4>
+                                <p class="padding testfont">Speakerbook's AI features gives field ops and sales teams a compeditive advantage</p>
+                    </div> -->
+                    
                 </div>
-              </div>
-             
 
-                    <!-- </div>
-                    <div class="fade">Fade In 06</div>
-                    <div class="fade">Fade In 07</div>
-                    <div class="fade">Fade In 08</div>
-                    <div class="fade">Fade In 09</div>
-                    <div class="fade">Fade In 10</div>
-                  </div> -->
+                <script>
+                $(function(){  // $(document).ready shorthand
+                    $('.monster').fadeIn('slow');
+                  });
+                  
+                  $(document).ready(function() {
+                      
+                      /* Every time the window is scrolled ... */
+                      $(window).scroll( function(){
+                      
+                          /* Check the location of each desired element */
+                          $('.hideme').each( function(i){
+                              
+                              var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                              var bottom_of_window = $(window).scrollTop() + $(window).height();
+                              
+                              /* If the object is completely visible in the window, fade it it */
+                              if( bottom_of_window > bottom_of_object ){
+                                  
+                                  $(this).animate({'opacity':'1'},1500);
+                                      
+                              }
+                              
+                          }); 
+                      
+                      });
+                      
+                  });
+
+</script>
+
+
 
     <div class="container">
 
@@ -329,35 +335,33 @@ min-width: 200px;
 
             <!-- <iframe width="100%" frameborder="0" src="https://uptempogroup.blogspot.com/" height="2000px"></iframe> -->
 
-            
+            <h1 class="textgrade">Without good data and analysis your group will miss opportunities.</h1>
+            <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                            <img class="container1" src="images/spots1.png" alt="data 1">
+                        <center>  <p class="ftsize">Target Data</p></center>
+                      </div>
+                      <div class="col-4">
+                            <img class="container1" src="images/spot2.png" alt="data 2">
+                        <center>  <p class="ftsize">Organize Process</p></center>
+                        </div>
+                      <div class="col-4">
+                            <img class="container1" src="images/spots3.png" alt="data 3">
+                       <center><p class="ftsize">Control Sales</p></center>
+                        </div>
+                    </div>
+                  </div>
+                 
+     
 
 
 
     </div>
 
-<script>
-    $(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".fade").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-      } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-      }
-    });
-  }).scroll(); //invoke scroll-handler on page-load
-});
-
-
-
-</script>
-
-<img class="container1" src="images/footer.png" alt="footer">
+    <img class="container1" src="images/footer.png" alt="footer">
 
 </body>
 </html>
+                        
+
